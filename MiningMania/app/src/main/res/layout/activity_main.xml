@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/MiningProgress"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="330dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="276dp"
+        android:max="100"
+        android:progress="40"
+        android:scaleY="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HashPerSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="64dp"
+        android:text="100 h\\s"
+        android:textColor="#03D3DA"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/MiningProgress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="52dp"
+        android:text="1000$"
+        android:textColor="#6A6A6A"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MiningProgress" />
+</androidx.constraintlayout.widget.ConstraintLayout>
