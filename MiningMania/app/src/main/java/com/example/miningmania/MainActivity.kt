@@ -11,7 +11,7 @@ private var hashText: TextView? = null
 private var moneyText: TextView? = null
 
 private var stack: Stack = Stack(1, 1)
-private var miner: Miner = Miner(0.1f)
+private var miner: Miner = Miner(0.01f)
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
