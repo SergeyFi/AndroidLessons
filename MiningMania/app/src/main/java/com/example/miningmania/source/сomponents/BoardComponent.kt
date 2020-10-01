@@ -1,10 +1,10 @@
-package source.сomponents
+package com.example.miningmania.source.сomponents
 
-import source.data.Socket
+import com.example.miningmania.source.data.Socket
 
-class BoardComponent(type: ComponentType, name: String, price:Float,
+class BoardComponent(name: String, price:Float,
                      val socket: Socket, private val cpuCount:Int, private val gpuCount:Int) :
-    Component(type, name, price) {
+    Component(ComponentType.Board, name, price) {
 
     private var score:Float = 0.0f
     private val cpus = Array<CPU?>(cpuCount){null}

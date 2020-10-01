@@ -1,4 +1,4 @@
-package source.сomponents
+package com.example.miningmania.source.сomponents
 
 enum class ComponentType {
     None,

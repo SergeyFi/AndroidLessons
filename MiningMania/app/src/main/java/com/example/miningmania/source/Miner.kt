@@ -1,6 +1,6 @@
-package source
+package com.example.miningmania.source
 
-import source.сomponents.Stack
+import com.example.miningmania.source.сomponents.Stack
 
 class Miner(val miningCoeff: Float) {
 
@@ -15,7 +15,7 @@ class Miner(val miningCoeff: Float) {
         var mine = 0.0f
 
         stack?.let {
-            mine += it.getMiningScore()
+            mine += it.calculateMiningScore()
         }
 
         return mine * miningCoeff
